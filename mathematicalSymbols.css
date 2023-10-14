@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Noto900";
+    src: url("asset/font/NotoSerifTC-Black.otf");
+}
+@font-face {
+    font-family: "GabExtBold";
+    src: url("asset/font/Gabarito-ExtraBold.ttf");
+}
+
+.webEnd{font-family: Noto900;}
+.element>*{font-family: GabExtBold;}
+/* font face adding */
+body{
+    /* background: linear-gradient(110deg,rgba(188, 225, 255, 0.8),rgba(12, 66, 76, 0.8)); */
+    background:linear-gradient(110deg,#3f87a6, #ebf8e1, #f69d3c);
+    /* .element{
+        justify-self: center;
+    } */
+}
+.wrapper{
+    margin: 0 auto;
+}
+
+.element{
+    position: relative;
+    /* transform: translateX(15%); */
+    background: rgba(251, 255, 212, 0.904);
+    border-radius: 10px;
+    font-size: 3rem;
+    display: inline-block;
+    /* display: flex; */
+    justify-content: space-around;
+    align-items:end;
+    text-align: center;
+    margin:30px;
+        /* background-color: rgba(230, 159, 159, 0.3); */
+}
+
+.element>*{
+    display: inline-block;
+    border: solid;
+    background:rgba(160, 229, 198, 0.8) ;
+    /* border-left: 5px;
+    border-right: 5px; */
+    padding: 75px; /*75*/
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 30px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.element>div:hover{
+    font-size: 4.5rem;
+}
+
+
+.webEnd{
+    background:rgba(225, 253, 235, 0.8);
+    display:block;
+    /* align-items: left; */
+    /* text-align: left; */
+    border-radius: 10px;
+    letter-spacing: 0.2em;
+    padding:0 1em;
+    overflow: hidden;
+    height: max-content;
+    line-height: 1.2;
+    margin:30px;
+}
+
+.section{
+    background-color: #ffffff95;
+    padding: 5px 20px;
+    margin: 30px;
+    border-radius: 10px ;
+}
+
+#inboxContent{
+    font-size: 1.3em;
+    font-family: GabExtBold;
+    letter-spacing: 3px;
+}

@@ -52,7 +52,7 @@ body{
 
 .element>div:hover{
     padding:1px 40px;
-    border-radius:40%;
+    border-radius:45%;
     font-size: 4.5rem;
 }
 

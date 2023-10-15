@@ -51,6 +51,8 @@ body{
 }
 
 .element>div:hover{
+    padding:1px 40px;
+    
     font-size: 4.5rem;
 }
 

@@ -10,6 +10,12 @@
     font-family:"Agdasima" ;
     src: url("asset/font/Agdasima-Bold.ttf");
 }
+
+@font-face {
+    font-family: "AbrilFatface";
+    src: url("asset/font/AbrilFatface-Regular.ttf");
+}
+
 *{
     box-sizing: content-box;
     padding:auto;
@@ -34,6 +40,7 @@ body{
 }
 
 .element{
+    font-family: GabExtBold,Agdasima,AbrilFatFace,Noto900;
     position: relative;
     /* transform: translateX(15%); */
     background: rgba(251, 255, 212, 0.904);
@@ -45,10 +52,11 @@ body{
     align-items:end;
     text-align: center;
     margin:30px;
+    padding: 10px;
         /* background-color: rgba(230, 159, 159, 0.3); */
 }
 
-.element>*{
+.element>.msIC{
     display: inline-block;
     border: solid;
     background:rgba(160, 229, 198, 0.8) ;
@@ -62,19 +70,19 @@ body{
     transition: 0.3s;
 }
 
-.element>div:hover{
+.element>.msIC:hover{
     padding: 1px 30px;
     border-radius: 44%;
     font-size: 4.5rem;
-    transform: rotate(10deg);
+    transform: rotate(5deg);
 }
 
-.element>div:hover::before{
+.element>.msIC:hover::before{
     content:">";
     color: black;
     font-size: 1.5rem;
 }
-.element>div:hover::after{
+.element>.msIC:hover::after{
     content:"<";
     color:black;
     font-size: 1.5rem;
@@ -123,6 +131,13 @@ body{
     margin: 3px;
     text-decoration: none;
     color: #f48917;
+}
+
+.elementHeader{
+    font-family:AbrilFatFace;
+    /* font-size: 1.5em; */
+    letter-spacing: 2px;
+    font-style: none;
 }
 
 #inboxContent{

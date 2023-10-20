@@ -22,16 +22,15 @@
     margin:0;
 }
 
-
-
 .webEnd{font-family: Noto900;}
 .element>*{font-family: GabExtBold;}
-/* font face adding */
+
+
+/* body and wrapper  */
 body{
     /* background: linear-gradient(110deg,rgba(188, 225, 255, 0.8),rgba(12, 66, 76, 0.8)); */
     background:linear-gradient(110deg,#3f87a6, #ebf8e1, #f69d3c);
-    width:100%
-    /* .element{
+        /* .element{
         justify-self: center;
     } */
 }
@@ -40,7 +39,18 @@ body{
     margin: 0 auto;
 }
 
-.element{
+
+/* element header  */
+.elementHeader{
+    font-family:AbrilFatFace;
+    /* font-size: 1.5em; */
+    letter-spacing: 2px;
+    font-style: none;
+}
+
+
+/* eSE  */
+.eSE{
     font-family: GabExtBold,Agdasima,AbrilFatFace,Noto900;
     position: relative;
     /* transform: translateX(15%); */
@@ -50,14 +60,14 @@ body{
     display: inline-block;
     /* display: flex; */
     justify-content: space-around;
-    align-items:end;
+    align-items:flex-end;
     text-align: center;
     margin:30px;
     padding: 10px;
         /* background-color: rgba(230, 159, 159, 0.3); */
 }
 
-.element>.msIC{
+.eSE>.msIC{
     display: inline-block;
     border: solid;
     background:rgba(160, 229, 198, 0.8) ;
@@ -71,24 +81,60 @@ body{
     transition: 0.3s;
 }
 
-.element>.msIC:hover{
+.eSE>.msIC:hover{
     padding: 1px 30px;
     border-radius: 44%;
     font-size: 4.5rem;
     transform: rotate(5deg);
 }
 
-.element>.msIC:hover::before{
+.eSE>.msIC:hover::before{
     content:">";
     color: black;
     font-size: 1.5rem;
 }
-.element>.msIC:hover::after{
+.eSE>.msIC:hover::after{
     content:"<";
     color:black;
     font-size: 1.5rem;
 }
 
+
+/* eotcc */
+.eotcc{
+    width:100vw - 60px;
+    padding:10px;
+    margin:30px;
+    background-color: rgba(216, 246, 227, 0.826);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+.eotcc>*{
+    color:white;
+    font-size: 1.5rem;
+}
+.eotcc>div{
+    margin: 10px;
+    background:#a3b980;
+    padding:30px;
+    margin: 20px;
+    /* flex-grow: 1; */
+    transition:.7s;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.eotcc>div:hover{
+    flex-grow: 6;
+    margin: 3vw;
+    text-align: center;
+    border-radius: 20px;
+    /* align-items: center; */
+}
+
+/* webend */
 .webEnd{
     background:rgba(225, 253, 235, 0.8);
     display:block;
@@ -96,13 +142,16 @@ body{
     /* text-align: left; */
     border-radius: 10px;
     letter-spacing: 0.2em;
-    padding:0 1em;
+    padding:0 1.3em;
     overflow: hidden;
     height: max-content;
     line-height: 1.2;
     margin:30px;
+    padding: 10px;
 }
 
+
+/* section */
 .section{
     background-color: #ffffff95;
     padding: 5px 20px;
@@ -110,6 +159,8 @@ body{
     border-radius: 10px ;
 }
 
+
+/* navbar */
 .navBar{
     width:100%;
     padding:4px;
@@ -134,13 +185,8 @@ body{
     color: #f48917;
 }
 
-.elementHeader{
-    font-family:AbrilFatFace;
-    /* font-size: 1.5em; */
-    letter-spacing: 2px;
-    font-style: none;
-}
 
+/* id css */
 #inboxContent{
     font-size: 1.3em;
     font-family: GabExtBold;

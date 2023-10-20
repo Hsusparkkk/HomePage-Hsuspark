@@ -7,6 +7,7 @@ const rN=document.getElementsByClassName("realNums");
 const cN=document.getElementsByClassName("complexNums");
 const mB=document.getElementsByClassName("moreButton")
 const iC=document.getElementById("inboxContent");
+
 // inbox content
 var nnIC="N:自然數是指在自然界中常見的、明顯出現的數字。<br>\
 因此，它是一個完整的、非負的數字。<br>\
@@ -37,6 +38,7 @@ Click <strong style=\"font-size: larger;\">ANY BUTTON</strong> to try!! <br>\
 var dfIC="<p id=\"inboxContent\">\
 Click <strong style=\"font-size: larger;\">ANY BUTTON</strong> to try!!\
 </p>"
+var fcIC="";
 function naturalNums(){
    document.getElementById("inboxContent").innerHTML=nnIC;
 }
@@ -61,7 +63,10 @@ function wholeNums(){
  function cleanButton(){
    document.getElementById("inboxContent").innerHTML=dfIC;
  }
-   // or
+ function fictionChange(){
+   document.getElementById("inboxContent").innerHTML=fcIC;
+ }
+// or
 // nN.addEventListener("click",function() {
 //     alert("hello world2");
 // })

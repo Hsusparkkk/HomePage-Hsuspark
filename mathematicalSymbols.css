@@ -30,6 +30,7 @@
 body{
     /* background: linear-gradient(110deg,rgba(188, 225, 255, 0.8),rgba(12, 66, 76, 0.8)); */
     background:linear-gradient(110deg,#3f87a6, #ebf8e1, #f69d3c);
+    width:100%
     /* .element{
         justify-self: center;
     } */

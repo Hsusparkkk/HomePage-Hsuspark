@@ -73,7 +73,7 @@ body{
 .menuIC>a{
     /* font-size: 3vh; */
     text-decoration: none;
-    transition: .1s;
+   transition:  .5s cubic-bezier(.88,.21,.73,.23);
     align-items: center;
     font-family: AbrilFatface;
 }

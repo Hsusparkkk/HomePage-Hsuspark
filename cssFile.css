@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Noto900";
+    src: url("asset/font/NotoSerifTC-Black.otf");
+}
+@font-face {
+    font-family: "GabExtBold";
+    src: url("asset/font/Gabarito-ExtraBold.ttf");
+}
+@font-face{
+    font-family:"Agdasima" ;
+    src: url("asset/font/Agdasima-Bold.ttf");
+}
+
+@font-face {
+    font-family: "AbrilFatface";
+    src: url("asset/font/AbrilFatface-Regular.ttf");
+}
+
+*{
+    box-sizing: content-box;
+    padding:auto;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background:linear-gradient(120deg,#7a9cdf,#4f9a87,#56e8ab);
+    justify-content: center;
+    align-items: center;
+}
+#navBar{
+    background-color: #5b796f94;
+    display: flex;
+    justify-content: space-around;
+    font-family: Agdasima;
+    margin: auto;
+}
+#navBarSorce{
+    display: flex;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.navBarIC{
+    margin: 5px;
+    font-size: 3vh;
+}
+.menuIC{
+    /* margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 8vh;
+    margin-right: 8vh; */
+    margin: 5px 8vh;
+
+    display: flex;
+    padding: 5px 10px;
+    border: black;
+    border-width: 5px;
+    border-radius: 5px;
+    background:#6ac0f1da;
+    transition: .1s;
+    text-align: center;
+    justify-content: center;
+    font-size: 3vh;
+}
+.menuIC>a{
+    /* font-size: 3vh; */
+    text-decoration: none;
+    transition: .1s;
+    align-items: center;
+    font-family: AbrilFatface;
+}
+.menuIC:hover{
+    border-radius:20px;
+    font-size: 4vh;
+}

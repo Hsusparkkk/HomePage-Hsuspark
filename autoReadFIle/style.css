@@ -29,8 +29,12 @@ body{
 #manuBlock>*{
     margin: 1vmin;
     width: 30vmax;
-    font-size: 3vh;
+    /* font-size: 3vh; */
     
+}
+
+#convToBtn{
+    font-size: 3vh;
 }
 
 

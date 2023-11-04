@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background:linear-gradient(120deg,#7a9cdf,#4f9a87,#56e8ab);
+    width: 100vw;
+    height: 100vh;
+}
+button{
+    padding: 3px;
+    margin: .3vw;
+    user-select: none;
+    cursor:pointer;
+}
+
+#navBar{
+    width:100%;
+    background:#ffffff6f;
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh;
+    font-size: 1.4vmax;
+}
+
+#headerCR{
+    font-weight: 700;
+    font-size: 1.5vmax;
+    display: block;
+    text-align: center;
+}
+
+#mainMenu{
+   display: flex;
+   justify-content: center; 
+}
+#mainMenu>*{
+    font-size: 1vmax;
+    margin: 1vh 2vw;
+}
+#output{
+    margin: 10px;
+    display:flex;
+    justify-content: center;
+}
+#output>*{
+    flex-grow: 1;
+    margin: 5px 15vw;
+    font-size: 2vh;
+}
+#score,#ques{
+    text-align: center;
+    font-size: 5vh;
+}
+#score{
+    /* content:"===Remaining vocabulary==="; */
+    background:#ffffff6f;
+}
+#score::before{
+    content:"===Remaining vocabulary===";
+    font-size: 7vmin;
+    font-weight: 900;
+    color:#3b7869
+}
+
+#ques{
+    /* background:white; */
+    margin: 1vmin;
+    display: block;
+}
+#ques>div{
+    background: white;
+    height: auto;
+}
+#failSection{
+    margin:5vh auto;
+    display: flex;
+    padding:1vmax;
+    justify-content: center;
+}
+#failVoc{
+    text-overflow:scroll;
+    width:50vmax;
+    height: 40vmin;
+    font-size: 2vmin;
+}

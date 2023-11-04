@@ -17,6 +17,7 @@
 }
 
 *{
+    cursor: pointer;
     box-sizing: content-box;
     padding:auto;
     margin:0;
@@ -30,6 +31,8 @@ body{
     background:linear-gradient(120deg,#7a9cdf,#4f9a87,#56e8ab);
     justify-content: center;
     align-items: center;
+    width:100vw;
+    height: 100vh;
 }
 #navBar{
     background-color: #5b796f94;
@@ -73,7 +76,8 @@ body{
 .menuIC>a{
     /* font-size: 3vh; */
     text-decoration: none;
-   transition:  .5s cubic-bezier(.88,.21,.73,.23);
+    /* transition:  .5s cubic-bezier(.88,.21,.73,.23); */
+    transition: .5s;
     align-items: center;
     font-family: AbrilFatface;
 }

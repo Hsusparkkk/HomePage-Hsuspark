@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    background: #9e9999;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#manuBlock{
+    position:relative;
+    background: white;
+    padding: 10px;
+    margin: 10px;
+    /* display: flex; */
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out;
+    height: 150px;
+}
+
+#manuBlock>*{
+    margin: 1vmin;
+    width: 30vmax;
+    font-size: 3vh;
+    
+}
+
+
+.fadeIn{
+    animation: .5s fadeIn forwards;
+    animation-delay: 0ms;;
+}
+
+@keyframes fadeIn{
+    to{
+        height: 200px;
+    }
+}

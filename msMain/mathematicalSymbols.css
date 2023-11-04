@@ -17,6 +17,7 @@
 }
 
 *{
+    cursor:pointer;
     box-sizing: content-box;
     padding:auto;
     margin:0;

@@ -39,6 +39,10 @@ body{
     animation-delay: 0ms;;
 }
 
+#textareaID{
+    font-size: 1.25vmax;
+}
+
 @keyframes fadeIn{
     to{
         height: 200px;

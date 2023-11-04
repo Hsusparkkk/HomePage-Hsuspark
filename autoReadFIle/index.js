@@ -11,10 +11,15 @@ function convertCSVToTXT() {
         const lines = decodedData.split("\n");
         const txtData = lines
           .map((line) => {
-            const [city, country] = line.split(",");
-            return `City: ${city}, Country: ${country}`;
+            const [question, answer] = line.split(",");
+            const textarea  = document.querySelector("#textareaID")
+            
+            const temp = `"${question}":"${answer}"`
+
+            textarea.innerHTML+=temp
+            return temp;
           })
-          .join("\n");
+          .join(",");
 
         const blob = new Blob([txtData], { type: "text/plain; charset=utf-8" });
         const url = URL.createObjectURL(blob);
